@@ -6,7 +6,7 @@ pipeline {
                 script {
                     if (env.GIT_BRANCH == 'origin/dev') {
                         sh '''
-                        docker build -t amward03/trio-deploy-flask:latest -t amward03/trio-deploy-flask:v$BUILD_NUMBER .
+                        docker build -t amward03/trio-deploy-flask:latest -t amward03/trio-deploy-flask:v$BUILD_NUMBER ./flask-app
                         '''
                     } else {
                         sh '''
