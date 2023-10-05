@@ -63,7 +63,7 @@ pipeline {
                         '''
                     } else {
                         sh '''
-                        echo "Branch not recognised"
+                        echo "Branch not recognised try again"
                         '''
                     }
                 }
